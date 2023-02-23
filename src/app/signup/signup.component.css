@@ -1,0 +1,32 @@
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 0 10px lightblue;
+    border-radius: 10px;
+  }
+  
+  .form {
+    width: 50%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-top: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5;
+  }

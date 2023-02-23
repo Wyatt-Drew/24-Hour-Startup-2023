@@ -1,0 +1,78 @@
+
+  <div class="views">
+    <ng-container *ngIf="selectedTab === 1">
+      <!--  -->
+      <div class = "grid-container">
+      <div class = "goals grid-item leftside" >
+        <div class="container">
+          <h1>Create a Goal</h1>
+          <form id="goal-form" >
+            <div class="form-element">
+              <div class="descriptor">Name of goal:</div>
+              <input type="text" name="name" required />
+            </div>
+            <div class="form-element">
+              <div class="descriptor">Amount:</div>
+              <input type="number" name="amount" required />
+            </div>
+            <div class="form-element">
+              <div class="descriptor">When:</div>
+              <input type="date" name="when" required />
+            </div>
+            <div class="form-element">
+                <div class="descriptor">Notes:</div>
+                <input type="text" name="notes" required />
+              </div>
+              <div class="form-element">
+                <div class="descriptor">Priority:</div>
+                <input type="text" name="priority" required />
+              </div>
+              <div class="form-element">
+                <div class="descriptor">Plan:</div>
+                <input type="text" name="plan" required />
+              </div>
+              <div class="form-element">
+                <div class="descriptor">Action Required:</div>
+                <input type="text" name="action" required />
+              </div>
+            <button type="submit" style="vertical-align: middle;">Create</button>
+          </form>
+        </div>
+
+
+        <script>
+          // Add JavaScript code to handle form submit here
+          const form = document.getElementById("goal-form");
+          form.addEventListener("submit", event => {
+            event.preventDefault();
+            const data = new FormData(form);
+            const name = data.get("name");
+            const amount = data.get("amount");
+            const when = data.get("when");
+            const notes = data.get("notes");
+            const priority = data.get("priority");
+            const plan = data.get("plan");
+            const action = data.get("action");
+            console.log(`Name of goal: ${name}`);
+            console.log(`Amount: $${amount}`);
+            console.log(`When: ${when}`);
+            // You can add code here to send the form data to a server or save it in local storage
+          });
+        </script>
+      </div>
+      <div class = "grid-item" class = "rightside">
+        <app-goalprogress></app-goalprogress>
+      </div>
+    </div>
+      <!--  -->
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 2">
+      <app-selfie></app-selfie>
+      <p>Financial selfie</p>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 3">
+        <p>Insights and financial health</p>
+    </ng-container>
+  </div>
+  
+

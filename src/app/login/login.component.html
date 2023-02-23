@@ -1,0 +1,20 @@
+<!-- login.component.html -->
+<div class="form-container">
+  <form class="form">
+    <h2>Login</h2>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <div class="form-group">
+      <p>Or sign in with Google</p>
+      <button type="button" class="btn btn-danger">Sign In with Google</button>
+    </div>
+    <p>Not a user yet? <a [routerLink]="['/signup']">Sign up</a></p>
+  </form>
+</div>

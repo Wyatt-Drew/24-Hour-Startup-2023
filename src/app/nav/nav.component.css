@@ -1,0 +1,30 @@
+nav,a{
+    text-decoration: none;
+}
+nav{
+    background-color: #AEE2FF;
+}
+
+ul li{
+    list-style-type: none;
+    width: 100%;
+    margin: 0auto;
+   
+}
+li{
+    display: inline;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+#goals{
+    /* align-self: flex-start; */
+}
+#selfie{
+    /* align-self: ; */
+}
+#insights{
+
+}

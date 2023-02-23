@@ -1,0 +1,56 @@
+router-outlet{
+    visibility: hidden;
+  }
+  .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr 8fr;
+      grid-gap: 5px;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main";
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    app-header {
+      color: black;
+      font-size: 14px;
+      grid-area: header;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    app-nav{
+        grid-area: nav;
+        text-align: center;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      background-color: #AEE2FF;
+
+    }
+    .leftside{
+        background-color: #93C6E7;
+
+    }
+    .rightside{
+        background-color: #FEDEFF;
+
+    }
+  
+    #mainContent{
+      grid-area: main;
+      /* background-color: #2b2991; */
+      height: 100%;
+  
+    }
+    #mainContent{
+  
+      height: 100%;
+      width: 100%;
+    }
+  

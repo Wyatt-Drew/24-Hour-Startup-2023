@@ -1,0 +1,23 @@
+header{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #B9F3FC;
+  
+}
+span{
+  text-align: center;
+  align-self: center;
+  font-size: 40px;
+}
+.logo{
+  align-self: flex-start;
+  height: 50%;
+  width: 10%
+}
+.avatar{
+  align-self: flex-end;
+  height: 50%;
+  width: 10%
+}

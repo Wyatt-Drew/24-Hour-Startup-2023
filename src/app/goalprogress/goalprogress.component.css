@@ -1,0 +1,11 @@
+.goal-progress {
+    display: flex;
+    align-items: center;
+  }
+  .progress-amount {
+    margin-right: 10px;
+  }
+  input[type="number"] {
+    width: 80px;
+    margin-right: 10px;
+  }
